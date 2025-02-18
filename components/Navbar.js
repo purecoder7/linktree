@@ -66,7 +66,7 @@ function Navbar() {
                 <Link href="/generate">Discover</Link>
               </li>
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact">Contact Us</Link>
               </li>
               
             </ul>
