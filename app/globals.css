@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bgreen{
+  background: rgb(37, 79, 26);
+}
+.tgrey{
+  color: rgb(103, 107, 95);;
+}
+.btnbg1{
+  background: rgb(239, 240, 236);
+  color: black;
+  width: 100px;
+  height: 60px;
+  border-radius: 20px;
+}
+.btnbg2{
+  background: rgb(30, 35, 48);
+  width: 150px;
+  height: 60px;
+  border-radius: 40px;
+
+}
+.popins{
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+
+}
+.yelow{
+  color: rgb(210, 232, 35);
+
+}
+
+@media only screen and (max-width: 600px) {
+  .textsm {
+    font-size: 30px;
+    text-align: left;
+  }
+  .textl{
+    text-align: left;
+  }
+}
+
+
+
+
+/* From Uiverse.io by ernestnash */ 
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  border: 3px solid rgb(252, 70, 100);
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+ }
+ 
+ .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(252, 70, 100);
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+ }
+ 
+ .btn:hover::before {
+  transform: translateX(0);
+ }
